@@ -1,0 +1,181 @@
+/* html selectors */
+/*
+
+
+
+@media screen and (max-width: 500px) {
+    .forecast {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+    }
+}
+/*
+
+    text-align: center;
+    width: 100%;
+}
+
+
+header img, .headings {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    line-height: 35px;
+    float: left;
+}
+*/
+/*
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    width: 120px;
+    vertical-align: middle;
+    margin: 0 auto;
+    
+}
+
+
+li a {
+    display: block;
+    float: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff0ce;
+    margin: 5px;
+}
+
+li a :visited {
+    color: #d55534
+}
+
+li a:hover {
+    background-color: #d55534;
+    color: #fff0ce;
+}
+
+.active {
+    background-color: #83b4b3;
+    color: white;
+}
+
+
+img {
+    width: 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+
+}
+
+p, footer {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+*/
+body {
+    background-color: #fff0ce;
+    font-family: "source sans pro", sans-serif;
+}
+
+header{
+    margin: .2em auto;
+    background-color: #99c2c1;
+}
+
+
+
+footer {
+    background-color: #74a09f;
+}
+
+/* <<<<<<< NAVIGATION >>>>>>>>>*/
+nav {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .active {
+    background-color: #097392;
+    color: white;
+}
+
+  a:link {
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      
+  }
+
+  li a:hover {
+      background-color: #475f5f;
+      color: white;
+  }
+
+  
+
+/* <<<<<<< CLASS SELECTORS >>>>>>>>>*/
+.motto {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+}
+
+.header {
+    padding: 20px 10px;
+    height: 200px;
+}
+
+.hero-img {
+    margin: 10px auto;
+    border: 1px solid #000;
+    width: 100%;
+    height: 300px;
+}
+
+.herodiv {
+   margin: 10px auto;
+   position: relative;
+   width: 960px;
+   height: 300px; 
+   
+}
+
+.weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #fff0ce;
+    border: 1px solid black;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    opacity: 0.7;
+
+}
+
+/* id selectors */
+
+/* <<<<<<< MEDIA QUERIES >>>>>>>>>*/
+
+@media screen and (max-width: 500px) {
+    .forecast {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+    }
+}
