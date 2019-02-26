@@ -129,12 +129,11 @@ li a:hover {
 }
 
 
-
-.hero-img {
+main figure.hero {width: 100%; margin: 0;}
+main figure.hero img {
     margin: 10px auto;
     border: 1px solid #000;
     width: 100%;
-    height: 300px;
     box-shadow: 0 0 30px rgb(54, 54, 54);
 }
 
@@ -156,6 +155,8 @@ li a:hover {
     opacity: 0.7;
 }
 
+
+
 /* id selectors */
 
 /* <<<<<<< MEDIA QUERIES >>>>>>>>>*/
@@ -166,5 +167,9 @@ li a:hover {
     }
     .menu {
         display: inline;
+    }
+
+    .hide {
+        display: none;
     }
 }
