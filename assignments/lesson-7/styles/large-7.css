@@ -1,0 +1,50 @@
+@media screen and (min-width: 1201px) {
+    .menu {
+        display: none;
+    }
+
+    li {
+        float: left;
+    }
+
+
+    li a {
+        display: inline;
+        padding: 8px;
+        
+        
+    }
+
+    main {
+        clear: left;
+    }
+
+    
+
+    .forecast {
+        display: block;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #imageContainer {
+        grid-template-columns: 1fr 1fr 1fr; 
+     }
+
+     .galleryImg {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+
+     .shadow:hover {
+        box-shadow: 0 0 50px #d4d4dc;
+     }
+}
+

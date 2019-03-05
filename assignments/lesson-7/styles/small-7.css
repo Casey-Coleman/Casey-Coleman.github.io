@@ -1,0 +1,192 @@
+/* html selectors */
+
+body {
+    background-color: #1d1e22;
+    font-family: "source sans pro", sans-serif;
+    color: #505869;
+    border: 1px dashed red;
+    
+}
+
+header {
+    background-color: #6b7896;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #393f4d;
+    text-align: center;
+}
+
+footer {
+    background-color: #6b7896;
+    border: 1px dashed yellow;
+}
+
+/* <<<<<<< NAVIGATION >>>>>>>>>*/
+
+nav {
+    text-align: center;
+    margin: 50px;
+    color: #feda6a;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    color: #feda6a;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #393f4d;
+    color: white;
+}
+
+
+/*
+a:visited {
+    color: #565676;
+}*/
+
+li a:hover {
+    
+    background-color: #a1a6b4;
+    color: white;
+}
+
+/* <<<<<<< CLASS SELECTORS >>>>>>>>>*/
+
+.header {
+    width: 100%;
+    height: 150px;
+    border: 1px dashed cyan;
+}
+
+.logo {
+    position: relative;
+    top: 5px;
+    left: 100px;
+    margin: 10px;
+    border: 1px dashed orange;
+}
+
+.clairvoyant {
+    font-size: 50px;
+    font-weight: bolder;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin-top: auto;
+    border: 1px dashed cyan;
+}
+
+.motto {
+    font-family: 'Roboto Slab', serif;
+    font-size: 10px;
+    font-style: italic;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    border: 1px dashed orange;
+}
+
+.preston {
+    font-size: 40px;
+    color: #d4d4dc;
+    margin: 0;
+}
+
+.prestonImage {
+    color: #d4d4dc;
+}
+
+.forecast {
+    border: 1px dashed green;
+}
+
+.five {
+    font-size: 30px;
+}
+
+
+.articleImg {
+    margin: 10px;
+    box-shadow: 0 0 30px rgb(54, 54, 54);
+    border: 1px solid black;
+    
+    
+}
+
+.storm {
+    border: 1px solid #565676;
+    padding: 10px;
+    margin: 50px;
+    
+}
+
+
+main figure.hero {width: 100%; margin: 0;}
+main figure.hero img {
+    margin: 10px auto;
+    border: 1px solid #000;
+    width: 100%;
+    box-shadow: 0 0 30px rgb(54, 54, 54);
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    width: 960px;
+    height: 300px;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #dddbcb;
+    border: 1px solid black;
+    padding: .5rem;
+    box-shadow: 0 0 30px rgb(54, 54, 54);
+    opacity: 0.7;
+}
+
+#imageContainer {
+    display: grid; 
+ }
+
+
+
+/* id selectors */
+
+/* <<<<<<< MEDIA QUERIES >>>>>>>>>*/
+
+@media screen and (max-width: 500px) {
+    .forecast {
+        display: none;
+    }
+    .menu {
+        display: inline;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #imageContainer {
+        grid-template-columns: 1fr; 
+     }
+
+  
+}

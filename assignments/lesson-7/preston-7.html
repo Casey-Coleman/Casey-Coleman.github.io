@@ -11,8 +11,8 @@
             href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro"
             rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/small-6.css">
-        <link rel="stylesheet" href="styles/large-6.css">
+        <link rel="stylesheet" href="styles/small-7.css">
+        <link rel="stylesheet" href="styles/large-7.css">
     </head>
     <body>
         <header class="header">
@@ -24,17 +24,16 @@
             <div class="motto"><h2>We've seen the weather!</h2></div>
 
             <nav>
-                <button onclick="toggleMenu()">&equiv;</button>
+                <button id="hamburger" onclick="toggleMenu()">&equiv;</button>
                 <ul id="menu" class="hide">
                     <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">Preston</a></li>
+                    <li class="active"><a href="preston-7.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
                 </ul>
             </nav>
-
         </header>
         <main>
             
@@ -47,24 +46,49 @@
                         srcset="
                         images/hero-image-4.jpg 400w,
                         images/hero-image-12.jpg 1600w">
-                    <figcaption>Beautiful Preston, ID</figcaption>
+                    <figcaption class="prestonImage">Beautiful Preston, ID</figcaption>
                 </figure>
                 
                 <section class="weathersummary"></section>
                     <h4>Weather summary</h4>
-                    <P>Label: Value</P>
-                    <P>Label: Value</P>
-                    <P>Label: Value</P>
-                </section>
+                    <div id="weatherSummary"></div>
+                    <section>
+                        <span>Current Temperature: </span><span id="temp"></span>
+                    </section>
+                    <section>
+                        <span>Current Wind Speed: </span><span id="windSpeed"></span>
+                    </section>
+                    <section>
+                        <span>Current Wind Chill: </span><span id="windChill"></span>
+                    </section>
             </div>
-
-
-            <h4 class="current">Current Weather: 40&deg; | cloudy with a chance
-                of sharknados</h4>
             <article class="forecast">
 
                 <h5 class="five">5-Day Forecast</h5>
-                <p>.....Table insert forecast here.....</p>
+                <h1>5-Day Forecast<h1>
+                <table>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thur</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <td><img src="" /></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                    </tr>
+                </table>
 
                 <p class="storm">A powerful winter storm is hitting East Idaho,
                     dumping several inches of snow and bringing destructive
@@ -118,5 +142,6 @@
         </footer>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
     </body>
 </html>
