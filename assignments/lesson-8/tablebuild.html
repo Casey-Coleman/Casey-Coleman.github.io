@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Table Build</title>
     <link rel="stylesheet" href="styles/tablebuild.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ 
 </head>
 <body>
     <header></header>
     <main>
         <table>
             <thead>
-                <tr>
-                    <td colspan="3">ACME Wildwest</td>
-                </tr>
-            </thead>
+                
+                    <p><caption><h1><td colspan="3">ACME Wildwest</td></h1></caption></p>
+                
+            <thead>
             <tbody>
                 <tr>
                     <th>Period</th>
@@ -40,14 +42,23 @@
                 <tr>
                     <td>November</td>
                     <td>$8,610</td>
-                    <td>$7,500</td>
+                    <td class="special">$7,500</td>
                 </tr>
                 <tr>
-                    <td>Black Friday</td>
+                    <td><em>Black Friday</em></td>
                     <td colspan="2">$3,200</td>
                 </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
             </tbody>
-            <tfoot></tfoot>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                </tr>
+            </tfoot>
         </table>
 
     </main>

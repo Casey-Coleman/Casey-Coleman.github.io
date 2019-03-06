@@ -201,5 +201,5 @@ main figure.hero img {
     #menu {
         display: flex;
         flex-direction: column;
-    
+    }
 }
