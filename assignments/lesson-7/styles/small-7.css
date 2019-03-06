@@ -3,7 +3,7 @@
 body {
     background-color: #1d1e22;
     font-family: "source sans pro", sans-serif;
-    color: #505869;
+    color: #889ac2;
     border: 1px dashed red;
     
 }
@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     background-color: #6b7896;
     border: 1px dashed yellow;
+}
+
+p {
+     color: #889ac2;
 }
 
 /* <<<<<<< NAVIGATION >>>>>>>>>*/
@@ -108,11 +112,13 @@ li a:hover {
 }
 
 .forecast {
+    
     border: 1px dashed green;
 }
 
 .five {
     font-size: 30px;
+    color: #889ac2;
 }
 
 
@@ -125,6 +131,7 @@ li a:hover {
 }
 
 .storm {
+    color: #889ac2;
     border: 1px solid #565676;
     padding: 10px;
     margin: 50px;
@@ -156,6 +163,10 @@ main figure.hero img {
     padding: .5rem;
     box-shadow: 0 0 30px rgb(54, 54, 54);
     opacity: 0.7;
+}
+
+#currentDate {
+    color: #d4d4dc;
 }
 
 #imageContainer {
