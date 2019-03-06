@@ -8,58 +8,60 @@ table {
     box-shadow: 10px 10px 10px #7fb9c2;
 }
 */
+
 tr:nth-child(even) {
-   background-color: #e7f0ed; 
+    background-color: #e7f0ed;
 }
+
 tr:nth-child(odd) {
     background-color: #e7ffed;
 }
+
 tr:nth-child(1) {
     background-color: #7fb9c2;
 }
-main thead {
+
+
+tr:nth-last-child(7) {
     background-color: #628ca6;
-    text-size: 4em;
+    color: white;
 }
-p:nth-child(1) {
-    text-size: 4em;
-}
+
+
+
+
+
+
 
 
 body {
-    font-family:  'Ubuntu', sans-serif;
-
+    font-family: 'Ubuntu', sans-serif;
 }
+
 table {
     width: 300px;
     box-shadow: 10px 10px 10px #9DB8C4;
     height: 300px;
-
 }
+
 table, th, td {
     border: 1px solid #c0c0c0;
     border-collapse: collapse;
     text-align: center;
     padding: 10px 10px 10px 10px;
 }
-/*
-
-tfoot {
+thead ~ td {
+    background-color: red;
+}
+.info {
     background-color: #7fb9c2;
-    font-size: 12px;
-
+    font-weight: 900;
+    font-size: 30px;
 }
-
-
-tbody {
-    background-color: #e7f0ed;
-}
-tr:nth-child(even) {
-    background-color: #e7ffed;
-}
-*/
 .special {
-    background-color:#628ca6;
-    color:#ffffff;
+    background-color: #628ca6;
+    color: white;
+}
+
 
 
