@@ -5,7 +5,6 @@ body {
     font-family: "source sans pro", sans-serif;
     color: #889ac2;
     border: 1px dashed red;
-    
 }
 
 header {
@@ -23,7 +22,7 @@ footer {
 }
 
 p {
-     color: #889ac2;
+    color: #889ac2;
 }
 
 /* <<<<<<< NAVIGATION >>>>>>>>>*/
@@ -33,7 +32,6 @@ nav {
     margin: 50px;
     color: #feda6a;
 }
-
 
 ul {
     list-style-type: none;
@@ -51,14 +49,12 @@ li a {
     color: white;
 }
 
-
 /*
 a:visited {
     color: #565676;
 }*/
 
 li a:hover {
-    
     background-color: #a1a6b4;
     color: white;
 }
@@ -112,7 +108,6 @@ li a:hover {
 }
 
 .forecast {
-    
     border: 1px dashed green;
 }
 
@@ -121,13 +116,10 @@ li a:hover {
     color: #889ac2;
 }
 
-
 .articleImg {
     margin: 10px;
     box-shadow: 0 0 30px rgb(54, 54, 54);
     border: 1px solid black;
-    
-    
 }
 
 .storm {
@@ -135,11 +127,13 @@ li a:hover {
     border: 1px solid #565676;
     padding: 10px;
     margin: 50px;
-    
 }
 
+main figure.hero {
+    width: 100%;
+    margin: 0;
+}
 
-main figure.hero {width: 100%; margin: 0;}
 main figure.hero img {
     margin: 10px auto;
     border: 1px solid #000;
@@ -170,34 +164,37 @@ main figure.hero img {
 }
 
 #imageContainer {
-    display: grid; 
- }
-
-
+    display: grid;
+}
 
 /* id selectors */
 
 /* <<<<<<< MEDIA QUERIES >>>>>>>>>*/
 
 @media screen and (max-width: 500px) {
-    .forecast {
+    #forecastTable {
         display: none;
     }
     .menu {
-        display: inline;
+        display: none;
     }
-
     .hide {
         display: none;
     }
-
     #hamburger {
         display: block;
     }
-
+    #conditions {
+        display: none;
+    }
     #imageContainer {
-        grid-template-columns: 1fr; 
-     }
-
-  
+        grid-template-columns: 1fr;
+    }
+    .localStory {
+        display: none;
+    }
+    #week {
+        display: none;
+    }
+   
 }
