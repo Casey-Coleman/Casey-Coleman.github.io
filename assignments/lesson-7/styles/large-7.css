@@ -1,6 +1,7 @@
-@media screen and (min-width: 1201px) {
-    .menu {
-        display: none;
+@media (min-width: 1201px) {
+    #menu {
+        display: flex;
+        flex-direction: row;
     }
 
     li {
@@ -27,7 +28,8 @@
     }
 
     .hide {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     #hamburger {

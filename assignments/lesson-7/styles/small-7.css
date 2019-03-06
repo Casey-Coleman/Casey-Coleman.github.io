@@ -76,14 +76,14 @@ li a:hover {
 }
 
 .clairvoyant {
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: bolder;
     position: absolute;
     top: 10px;
     right: 0;
     left: 0;
     margin-top: auto;
-    border: 1px dashed cyan;
+    border: 4px dashed rgb(123, 255, 0);
 }
 
 .motto {
@@ -159,6 +159,8 @@ main figure.hero img {
     opacity: 0.7;
 }
 
+/* id selectors */
+
 #currentDate {
     color: #d4d4dc;
 }
@@ -167,24 +169,24 @@ main figure.hero img {
     display: grid;
 }
 
-/* id selectors */
-
 /* <<<<<<< MEDIA QUERIES >>>>>>>>>*/
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     #forecastTable {
         display: none;
     }
-    .menu {
+    #menu {
         display: none;
+        
     }
     .hide {
         display: none;
+        
     }
     #hamburger {
         display: block;
     }
-    #conditions {
+    main #conditions {
         display: none;
     }
     #imageContainer {
@@ -196,5 +198,8 @@ main figure.hero img {
     #week {
         display: none;
     }
-   
+    #menu {
+        display: flex;
+        flex-direction: column;
+    
 }

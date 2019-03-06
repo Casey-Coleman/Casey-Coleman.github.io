@@ -1,9 +1,9 @@
-@media screen and (min-width: 501px) and (max-width: 1200px) {
+@media (min-width: 501px) and (max-width: 1200px) {
     #currentConditions {
         display: none;
     }
 
-    #imageContainer {
+    main #imageContainer {
         grid-template-columns: 1fr 1fr; 
      }
 
