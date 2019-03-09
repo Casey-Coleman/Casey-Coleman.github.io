@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Casey Coleman | BYU Idaho | weather site</title>
+        <meta name="description" content="Weather website for casey coleman a
+            student at byu idaho CIT230">
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small-7.css">
+        <link rel="stylesheet" href="styles/large-7.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="/preston-7.html"><img src="images/sunThunder.png" width="100" alt="logo"/></a>
+            </div>
+            <h1 class="clairvoyant">Clairvoyant Forecast</h1>
+            <div class="motto"><h2>We've seen the weather!</h2></div>
+
+            <nav>
+                <button id="hamburger" onclick="toggleMenu()">&equiv;</button>
+                <ul id="menu" class="hide">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="preston-7.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+
+            <div class="herodiv">
+                <h3 class="preston">Preston Idaho</h3>
+                <figure class="hero">
+                    <img src="images/hero-image-4.jpg"
+                        alt="beautiful meadow with full sun and a few clouds"
+                        srcset="images/hero-image-4.jpg 400w,
+                        images/hero-image-12.jpg 1600w">
+                    <figcaption class="prestonImage">Beautiful Preston, ID</figcaption>
+                </figure>
+                
+                
+                <section class="weathersummary"><h4>Weather summary</h4></section>
+                
+                <div id="conditions">
+                    <div>
+                        <span>Current Temperature: </span><span id="temp"></span>
+                    </div>
+                    <div>
+                        <span>Current Wind Speed: </span><span id="windSpeed"></span>
+                    </div>
+                    <div>
+                        <span>Current Wind Chill: </span><span id="windChill"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="forecast">
+                    <h2>5-Day Forecast</h2>
+
+                
+                <table id="forecastTable">
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thur</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <td><img src="" /></td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                        <td>#</td>
+                    </tr>
+                    <tr>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                        <td>45&deg;</td>
+                    </tr>
+                </table>
+            </section>
+            
+
+
+                <article class="localStory">A powerful winter storm is hitting East Idaho,
+                    dumping several inches of snow and bringing destructive
+                    winds to the region that have already resulted in two major
+                    road closures.
+                    The Idaho Transportation Department reported Sunday
+                    afternoon that Highway 30 between Lava Hot Springs and Soda
+                    Springs and Highway 34 between Soda Springs and the Wyoming
+                    state line had been shut down because of blowing snow that
+                    drastically reduced visibility. As of 4:30 p.m. Sunday,
+                    Highway 30 had been reopened, although the Caribou County
+                    Sheriff's Office reported conditions on the road are still
+                    potentially hazardous. Highway 34 will remain closed until
+                    the storm subsides.
+                    The storm arrived in East Idaho Sunday morning and is
+                    forecast to continue through Sunday night.
+                    One new development with the storm is that it could cause
+                    avalanches in western Fremont County and an avalanche
+                    warning was issued Sunday morning for that area by the
+                    National Forest Avalanche Center in Bozeman, Montana.
+                    Backcountry travelers should stay away from the mountains of
+                    western Fremont County until the avalanche threat subsides.
+                    In addition, the National Weather Service reports that the
+                    storm will cause wind chill conditions in East Idaho's
+                    higher elevations on Sunday that will make temperatures feel
+                    like they're minus 15 degrees. Such wind chill can cause
+                    frostbite in as little as 30 minutes.
+                    The National Weather Service has issued winter storm
+                    warnings, winter weather advisories and wind advisories for
+                    East Idaho because of the storm.
+                    <img class="articleImg" src="images/badRoad.jpg"
+                        width="300" alt="slow traffic in snow">
+                
+                <p>by: Al Roker</p>
+            </article>
+
+            
+
+
+        </main>
+        <footer>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.88543794538!2d-111.89787746808611!3d42.09974561259055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549844659652"
+                    width="200"  style="border:0"
+                    allowfullscreen></iframe>
+            </div>
+
+            <p>Contact Us <br>&copy; 2019 | Casey Coleman | Clairvoyant Forecast</p>
+            <div id="currentDate">fullDate</div>
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>
