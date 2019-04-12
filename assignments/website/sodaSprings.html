@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casey Coleman | BYU Idaho | weather site</title>
+    <meta name="description" content="Weather website for casey coleman a
+            student at byu idaho CIT230">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!--  <link rel="stylesheet" href="styles/json.css"> -->
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 500px)" srcset="images/sunThunder">
+            <img src="images/sunThunder.png" width="100" alt="logo" />
+        </picture>
+        <section>
+            <h1 id="clairvoyant">Clairvoyant Forecast</h1>
+            <div class="motto">
+                <h2>We've seen the weather!</h2>
+            </div>
+        </section>
+
+        <nav>
+            <button id="hamburger" onclick="toggleMenu()">&equiv;</button>
+            <ul id="menu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="sodaSprings.html">Soda Springs</a></li>
+                <li><a href="fishHaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <div class="herodiv">
+            <h3 class="preston">Preston Idaho</h3>
+            <figure class="hero">
+                <img src="images/sodaSpringsHero.jpg" alt="beautiful meadow with full sun and a few clouds" srcset="images/sodaSpringsHero.jpg 400w,
+                        images/sodaSpringsHero.jpg 1600w">
+                <figcaption class="prestonCaption">Soda Springs, ID</figcaption>
+            </figure>
+        
+
+
+            <section class="weathersummary">
+                <h4>Weather summary</h4>
+            </section>
+            <div id="conditions">
+                <div>
+                    <span>Current Temperature: </span><span id="temp"></span>
+                </div>
+                <div>
+                    <span>Current Wind Speed: </span><span id="windSpeed"></span>
+                </div>
+                <div>
+                    <span>Current Wind Chill: </span><span id="windChill"></span>
+                </div>
+            </div>
+        </div>
+        <h2>5-Day Forecast</h2>
+        <section id="forecast">
+
+
+
+            <table id="forecastTable">
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td><img src="" /></td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                </tr>
+            </table>
+        </section>
+
+
+
+        <article class="wondersSodaSprings">The settlement of Soda Springs got its start as an oasis along the Oregon
+            Trail, eagerly anticipated among emigrants for its thousands of fresh mineral water springs. A couple of
+            enterprising pioneers recognized the commercial potential of these springs, and began bottling the water
+            under the name of “Idanha”. This was before the days before water could be artificially carbonated, and the
+            lightly bubbly Idanha was a hit, winning the top prize at Chicago’s World Fair in 1893, and again in Paris
+            in 1900.
+
+            There are multiple places around town to try out the water, which is still bubbling unabated out of the
+            ground. We took a cup to the Hooper Springs to sample it. Not bad, it tastes like lightly carbonated bottled
+            water, a bit sweeter and more mineralized.
+
+
+
+            Not far away from Hooper Springs (and in fact, too close for comfort) is the Monsanto Phosphorus Plant. Soda
+            Springs sits on top of one of the largest phosphate deposits in the entire world, and Monsanto’s large-scale
+            mining and purification plant has changed the town’s landscape. Literally. As part of its manufacturing
+            process, Monsanto frequently dumps red-hot slag down the side of a massive, man-made hill. It cools quickly,
+            but as the molten metal is poured out of the truck, it looks just like lava running down a volcano.
+
+            A huge hill of man-made lava, naturally carbonated springs of drinkable mineral water, and we haven’t even
+            arrived at Soda Springs’s top highlight. In 1937, during an attempt to find hot water for a pool, a drill
+            accidentally unleashed a geyser in the middle of town. It roared for months, nearly flooding the little
+            village, before engineers were finally able to get a handle on the situation. They capped the geyser with a
+            timed valve, making Soda Springs the proud owner of the “the world’s only captive geyser“. It erupts every
+            hour, on the hour; more reliable than Old Faithful.
+
+
+            <picture>
+                <img class="articleImg" src="images/wondersSodaSprings.jpg" width="300" alt="bubbling water with a guy getting a mug full to drink">
+            </picture>
+
+            <p>by: Idaho for 91 Days</p>
+        </article>
+
+
+
+
+    </main>
+    <footer>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.88543794538!2d-111.89787746808611!3d42.09974561259055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549844659652"
+                width="200" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <p>Contact Us <br>&copy; 2019 | Casey Coleman | Clairvoyant Forecast</p>
+        <div id="currentDate">fullDate</div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/json.js"></script>
+</body>
+
+</html>

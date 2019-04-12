@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casey Coleman | BYU Idaho | weather site</title>
+    <meta name="description" content="Weather website for casey coleman a
+            student at byu idaho CIT230">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!--  <link rel="stylesheet" href="styles/json.css"> -->
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 500px)" srcset="images/sunThunder">
+            <img src="images/sunThunder.png" width="100" alt="logo" />
+        </picture>
+        <section>
+            <h1 id="clairvoyant">Clairvoyant Forecast</h1>
+            <div class="motto">
+                <h2>We've seen the weather!</h2>
+            </div>
+        </section>
+
+        <nav>
+            <button id="hamburger" onclick="toggleMenu()">&equiv;</button>
+            <ul id="menu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+        <div class="herodiv">
+            <h3 class="preston">Preston Idaho</h3>
+            <figure class="hero">
+                <img src="images/fishHavenHero.jpg" alt="beautiful meadow with full sun and a few clouds" srcset="images/fishHavenHero.jpg 400w,
+                        images/fishHavenHero.jpg 1600w">
+                <figcaption class="prestonCaption">Fish Haven, ID</figcaption>
+            </figure>
+
+
+            <section class="weathersummary">
+                <h4>Weather summary</h4>
+            </section>
+            <div id="conditions">
+                <div>
+                    <span>Current Temperature: </span><span id="temp"></span>
+                </div>
+                <div>
+                    <span>Current Wind Speed: </span><span id="windSpeed"></span>
+                </div>
+                <div>
+                    <span>Current Wind Chill: </span><span id="windChill"></span>
+                </div>
+            </div>
+        </div>
+        <h2>5-Day Forecast</h2>
+        <section id="forecast">
+
+
+
+            <table id="forecastTable">
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td><img src="" /></td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                    <td>#</td>
+                </tr>
+                <tr>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                    <td>45&deg;</td>
+                </tr>
+            </table>
+        </section>
+
+
+
+        <article class="MinnetonkaCave">Minnetonka Cave is a fascinating 9-room cave of stalactites, stalagmites and
+            banded travertine that was originally found by grouse hunters. Don't miss one of the most striking
+            stalactites in the cave, called the Bride, known for its lacy appearance.Three stalagmites, over 10 feet
+            high, have diameters of nearly four feet. Enjoy a guided 90-minute, half-mile walk into this beautiful cave.
+            Be prepared for the 400 steps up and down in the cave and bring a jacket, since the cave is cool at about 40
+            degrees year round. The road up St. Charles Main Canyon is paved to the mouth of the cave.
+            The cave isn't accessible until mountain snows have melted. Visitors can tour the cave from June through
+            Labor day.
+
+            See our 360° Tour of Minnetonka Cave! (Click on the map in the lower righthand corner and click on the
+            marker for Minnetonka Cave.)
+
+            Attention! If you plan on visiting Minnetonka Cave please DO NOT wear any clothing (including shoes, hats,
+            belts, jewelry) or bring any items with you (such as cameras, backpacks, cell phones, purses, etc) that have
+            been in another cave or mine.
+
+            Due to the westward spread of White Nose syndrome (WNS), restrictions on clothing and items that have been
+            in other caves are currently in place at Minnetonka Cave to prevent introduction of this bat disease into
+            Idaho. It is possible for humans to spread the disease between caves if clothing or equipment has been
+            exposed to the fungus. Leaving clothing or other items that have been in another cave or mine at home will
+            help protect bat species inhabiting Minnetonka Cave. Introduction of this disease into Minnetonka Cave would
+            devastate local bat populations, and in the event of a cave closure, greatly impact local economies. For
+            more information on WNS and its current impacts to bats in North America visit http://whitenosesyndrome.org/
+
+            The Paris Ice Cave is also an interest landmark in the valley. Although not as spectacular as the
+            Minnetonka, visitors enjoy its interesting aura. Just follow the signs up Paris Main Canyon. This cave is
+            open year round but is only accessible by snowmobile during the winter months. Most years you can drive to
+            the cave June through October. If you'd like to check road conditions, contact the Montpelier Ranger
+            District by calling 208-847-0375.
+            <picture>
+                <img class="articleImg" src="images/minnetonkaCave.jpg" width="300" alt="Minnetonka Cave Fish Haven, Idaho">
+            </picture>
+
+            <p>by: Bear Lake Convention and Visitors Bureau</p>
+        </article>
+
+
+
+
+    </main>
+    <footer>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.88543794538!2d-111.89787746808611!3d42.09974561259055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549844659652"
+                width="200" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <p>Contact Us <br>&copy; 2019 | Casey Coleman | Clairvoyant Forecast</p>
+        <div id="currentDate">fullDate</div>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/json.js"></script>
+</body>
+
+</html>
