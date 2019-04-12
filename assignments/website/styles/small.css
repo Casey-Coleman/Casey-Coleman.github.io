@@ -1,0 +1,218 @@
+/* html selectors */
+
+
+body {
+    background-color: #1d1e22;
+    font-family: 'Roboto', sans-serif;
+    color: #889ac2;
+    border: solid 3px red;
+    
+
+    
+}
+
+header {
+    background-color: #6b7896;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    color: #393f4d;
+    text-align: center;
+} */
+
+footer {
+    background-color: #6b7896;
+    width: 100%;
+    border: solid 3px blue;
+    
+}
+
+p {
+    color: #889ac2;
+}
+
+/* <<<<<<< NAVIGATION >>>>>>>>>*/
+
+nav {
+    text-align: center;
+    /* margin: 50px; */
+    color: #feda6a;
+}
+
+ul {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+}
+
+li a {
+    color: #feda6a;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #393f4d;
+    color: white;
+}
+
+/*
+a:visited {
+    color: #565676;
+}*/
+
+li a:hover {
+    background-color: #a1a6b4;
+    color: white;
+}
+
+/* <<<<<<< CLASS SELECTORS >>>>>>>>>*/
+
+header {
+   /*  width: 100%;
+    height: 150px; */
+    border: solid 3px yellow;
+    
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    margin: 10px;
+}
+
+#clairvoyant {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    padding: 5px;
+   /*  position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin-top: auto; */
+}
+
+.motto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    /* position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0; */
+}
+
+.preston {
+    font-size: 40px;
+    color: #d4d4dc;
+    margin: 0;
+}
+
+.prestonCaption {
+    color: #d4d4dc;
+    margin-left: 3rem;
+    padding: 20px;
+    display: inline-block;
+    
+}
+
+#forecast {
+    border: 1px dashed green;
+    position: block;
+   
+    display: block;
+}
+
+.five {
+    font-size: 30px;
+    color: #889ac2;
+}
+
+.articleImg {
+    margin: 10px;
+    box-shadow: 0 0 30px rgb(54, 54, 54);
+    border: 1px solid black;
+}
+
+
+
+main figure.hero {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.hero img {
+    margin: 10px auto;
+    border: 1px solid #000;
+    width: 100%;
+    box-shadow: 0 0 30px rgb(54, 54, 54);
+}
+
+.herodiv {
+width: 100%;
+    position: relative;
+    width: 960px;
+    height: 300px;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #dddbcb;
+    border: 1px solid black;
+    padding: .5rem;
+    box-shadow: 0 0 30px rgb(54, 54, 54);
+    opacity: 0.7;
+}
+
+/* id selectors */
+
+#currentDate {
+    color: #d4d4dc;
+}
+
+#imageContainer {
+    display: grid;
+}
+
+/* <<<<<<< MEDIA QUERIES >>>>>>>>>*/
+
+ @media (max-width: 500px) {
+    #forecastTable {
+        display: none;
+    } 
+
+    
+/*     
+    #menu {
+        display: none;
+        
+    } */
+    .hide {
+        display: none;
+        
+    }
+    #hamburger {
+        display: block;
+    }
+    main #conditions {
+        display: none;
+    }
+    #imageContainer {
+        grid-template-columns: 1fr;
+    }
+    .localStory {
+        display: none;
+    }
+    #week {
+        display: none;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
